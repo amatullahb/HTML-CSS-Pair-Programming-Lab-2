@@ -1,0 +1,77 @@
+<!-- Amatullah Brown 
+    Code Differently Week 3 Lab 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- ## Steps
+        1. The page should have a section for gathering user contact info
+        2. The page should have a section for gathering address info
+        3. The page should have a section for gathering credit card info and a submit button
+        4. The page should have the correct coloring
+        5. The page should have the correct border styling
+        6. The page should have the correct spacing -->
+    <form>
+        <fieldset>
+            <legend>Step 1: Your details</legend>
+            <div class="border">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="First and last name">
+            </div><br>
+            <div class="border">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="example@domain.com">
+            </div><br>
+            <div class="border">
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" placeholder="Eg. +4475000000">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Step 2: Delivery address</legend>
+            <div class="border">
+                <label for="address">Address</label>
+                <textarea name="address" rows="7" cols="25"></textarea>
+            </div><br>
+            <div class="border">
+                <label for="postCode">Post code</label>
+                <input type="number" name="postCode">
+            </div><br>
+            <div class="border">
+                <label for="country">Country</label>
+                <input type="text" name="country">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Step 3: Card details</legend>
+            <div class="border">
+                <label class="cardType">Card type</label><br>
+                <input type="radio" value="visa" name="cardType">
+                <label for="visa">VISA</label>
+                <input type="radio" value="amex" name="cardType">
+                <label for="amex">AmEx</label>
+                <input type="radio" value="mastercard" name="cardType">
+                <label for="mastercard">Mastercard</label>
+            </div><br>
+            <div class="border">
+                <label for="cardNum">Card number</label>
+                <input type="number" name="cardNum">
+            </div><br>
+            <div class="border">
+                <label for="secCode">Security code</label>
+                <input type="number" name="secCode">
+            </div><br>
+            <div class="border">
+                <label for="cardName">Name on card</label>
+                <input type="text" name="cardName" placeholder="Exact name as on the card">
+            </div>
+        </fieldset>
+        <span class="center"><button type="submit">BUY IT!</button></span>
+    </form>
+</body>
+</html>
